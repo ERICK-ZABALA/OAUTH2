@@ -16,6 +16,7 @@ Requirements
 1.  Create an account in the portal web Webex for Developers
     <https://developer.webex.com/>.
 
+
 2.  Create your Webex Apps
 
 <img src="./media/image2.png"
@@ -70,8 +71,16 @@ style="width:5.77844in;height:2.27398in" />
 >
 > (oauth) devnet@PC1 ~/devnet/webex \$
 
+
 4.  Activate Flask in your virtual environment and install the libraries
     listed in requirements.txt
+
+´´´python
+devnet@PC1 ~/devnet/webex \$ python3.10 -m venv oauth
+devnet@PC1 ~/devnet/webex \$ source oauth/bin/activate
+devnet@PC1 ~/devnet/webex \$pip install -r requirements.txt
+´´´
+
 
 > **<u>Flow OAuth 2.0</u>**
 >
