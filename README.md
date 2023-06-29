@@ -10,9 +10,9 @@
         <p> 2023 </p>
 </div>
 
-Authorization framework standard that allows a user to grant a
-third-party web site or application access to the user's protected and
-control access to their applications and resources.
+Authorization framework standard that allows a user to grant a third-party web site or application access to the user's protected and control access to their applications and resources. In the OAuth2 flow, there are typically four parties involved: the user, the client (the application requesting access to the user's resources), the authorization server (responsible for authenticating the user and obtaining their consent), and the resource server (where the user's protected resources are stored).
+
+The OAuth2 protocol works by using access tokens, which are issued by the authorization server after the user grants permission to the client. These access tokens are then presented to the resource server by the client to gain access to the protected resources on behalf of the user. This separation of authorization and resource servers allows for increased security, as the client never directly handles the user's credentials. 
 
 Requirements
 
