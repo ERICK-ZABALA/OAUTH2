@@ -77,12 +77,13 @@ devnet@PC1 ~/devnet/webex \$ source oauth/bin/activate
 devnet@PC1 ~/devnet/webex \$pip install -r requirements.txt
 ```
 
-
-> **<u>Flow OAuth 2.0</u>**
+# Flow OAuth 2.0
 
 <div align=center>
 <img src="./media/image7.png" style="width:6.1375in;height:3.16181in" />
+        
 Figure. Cisco Live – DEVNET 2675
+
 <https://www.ciscolive.com/on-demand/on-demand-details.html?#/video/1687390798629001IngZ>
 </div>
 
@@ -93,6 +94,5 @@ alt="Build - Login with Webex | Webex for Developers" />
 
 References:
 
-- Implementing OAuth 2.0 Authorization for Webex Integrations - DEVNET
-  2675
-<https://www.ciscolive.com/on-demand/on-demand-details.html?#/video/1687390798629001IngZ>
+- Implementing OAuth 2.0 Authorization for Webex Integrations - DEVNET 2675
+  <https://www.ciscolive.com/on-demand/on-demand-details.html?#/video/1687390798629001IngZ>
