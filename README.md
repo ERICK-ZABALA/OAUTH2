@@ -1,15 +1,12 @@
 
 <div align=center>
-<img src="./media/image1.png" style="width:3.63448in;height:3.64827in"
-alt="What is OAuth? Meet this protocol you use so often. - Applications and Systems" />
-        <p>OAUTH 2.0</p>
-    <h1> The OAuth 2.0 Authorization for Webex integrations </h1>
+        <img src="./media/image1.png" style="width:3.63448in;height:3.64827in"
+        alt="What is OAuth? Meet this protocol you use so often. - Applications and Systems" />
+                
+        <h1> The OAuth 2.0 Authorization for Webex integrations </h1>
+        <p> OAUTH 2.0 </p>
+        <p> 2023 </p>
 </div>
-
-****
-
-
-**<u>2023</u>**
 
 Authorization framework standard that allows a user to grant a
 third-party web site or application access to the user's protected and
