@@ -2,7 +2,6 @@
 <div align=center>
         <img src="./media/image1.png" style="width:3.63448in;height:3.64827in"
         alt="What is OAuth? Meet this protocol you use so often. - Applications and Systems" />
-                
         <h1> The OAuth 2.0 Authorization for Webex integrations </h1>
         <p> OAUTH 2.0 </p>
         <p> 2023 </p>
