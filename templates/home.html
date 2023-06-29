@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>Sitio Web</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link href = "/static/css/stylesheet.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body>
+
+    <object data="/static/css/oauth2_logo.svg" type="image/svg+xml">
+        <img src="/static/css/oauth2_logo.png" alt="OAuth 2.0 Logo">
+    </object>
+      
+    <h1>The OAuth 2.0 Authorization for Webex integrations</h1>
+
+    <h4> 
+        That is a standard designed to allow a website or application 
+        to access resources hosted by other web apps on behalf of a user.
+    </h4>
+
+    <h4>
+        The instruction "form action=/oauth" use method GET in the code HTML 
+        when the user made Clic in "Login with Webex"
+    </h4>
+
+    <h4>
+        We are going to redirect to http://localhost:2000/next.html
+    </h4>
+    
+    <div id="button-start">
+    <form action="/next.html" method="get">
+    <label for="fname"></label>
+    <button> Login with Webex </button>
+    </form>
+    </div>
+</body>
+</html>

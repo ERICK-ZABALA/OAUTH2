@@ -1,0 +1,72 @@
+
+
+object {
+    width: 20%;
+    height: auto;
+  }
+
+body {
+    
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Cisco Sans';
+    line-height: 1.5;
+    
+    background-image: url("/static/css/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+h1, h4 {
+    
+    font-family: 'Cisco Sans';
+}
+
+button {
+    background-color: #078855;
+    color: #F8F8F8;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Agrega una transición suave a la propiedad de color de fondo */
+    border-radius: 28px;
+    font-size: 18px;
+    width: 350px; /* Ajusta el ancho del botón según tus preferencias */
+    height: 50px;
+    font-family: 'Cisco Sans' 
+    
+    
+}
+
+button:hover {
+    background-color: #FFFFFF; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    border-color: #078855;
+    border-radius: 25px;
+    color: #000000;
+}
+
+h1 {
+    font-weight: bold; /* Aplica un estilo en negrita a los encabezados */
+    font-size: 28px; /* Cambia el tamaño de la fuente del encabezado h1 según tus preferencias */
+}
+
+h4 {
+    font-size: 16px; /* Cambia el tamaño de la fuente del encabezado h4 según tus preferencias */
+    color: #FFFFFF
+}
+
+#spaces-list {
+    display: none;
+}
+
+#spaces-list.active {
+    display: block;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link href = "/static/css/stylesheet.css" rel = "stylesheet" type = "text/css" /></head>
+<body>
+        
+    <object data="/static/css/oauth2_logo.svg" type="image/svg+xml">
+        <img src="/static/css/oauth2_logo.png" alt="OAuth 2.0 Logo">
+    </object>
+  
+    <h1>The OAuth 2.0 Authorization for Webex integrations</h1>
+    
+    <h4> 
+        That is a standard designed to allow a website or application 
+        to access resources hosted by other web apps on behalf of a user.
+    </h4>
+    
+    <div id="button-start">
+        <label for="fname"></label>
+        <button> Spaces </button>
+        </div>
+
+    <ul id="spaces-list">
+        {% for space in spaces %}
+            <p>{{ space }}</p>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var spacesList = document.getElementById("spaces-list");
+        var buttonSpaces = document.querySelector("#button-start button");
+
+        buttonSpaces.addEventListener("click", function() {
+            spacesList.classList.toggle("active");
+        });
+    });
+
+</script>
