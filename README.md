@@ -87,8 +87,6 @@ devnet@PC1 ~/devnet/webex \$pip install -r requirements.txt
         
 Figure. Cisco Live – DEVNET 2675
 
-# Proof of Concept
-
 <https://www.ciscolive.com/on-demand/on-demand-details.html?#/video/1687390798629001IngZ>
 </div>
 
@@ -97,10 +95,10 @@ Figure. Cisco Live – DEVNET 2675
 alt="Build - Login with Webex | Webex for Developers" />
 </div>
 
-
-
+<div align=center>
+# Proof of Concept
 https://github.com/ERICK-ZABALA/OAUTH2/assets/38144008/16aa3e9f-873b-4cd3-98ce-e7e8bbdc9b62
-
+</div>
 
 
 References:
