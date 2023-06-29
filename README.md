@@ -95,6 +95,12 @@ Figure. Cisco Live – DEVNET 2675
 alt="Build - Login with Webex | Webex for Developers" />
 </div>
 
+
+
+https://github.com/ERICK-ZABALA/OAUTH2/assets/38144008/16aa3e9f-873b-4cd3-98ce-e7e8bbdc9b62
+
+
+
 References:
 
 - Implementing OAuth 2.0 Authorization for Webex Integrations - DEVNET 2675
