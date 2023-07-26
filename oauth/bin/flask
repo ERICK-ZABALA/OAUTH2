@@ -1,4 +1,4 @@
-#!/home/devnet/devnet/webex/oauth/bin/python3.11
+#!/home/devnet/devnet/oauth2/OAUTH2/oauth/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

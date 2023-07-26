@@ -13,6 +13,7 @@ app.secret_key = os.urandom(24)
 clientID = os.environ.get('clientID')
 secretID = os.environ.get('secretID')
 redirectURI = "http://127.0.0.1:2000/redirect.html"
+oauthUrl = "https://webexapis.com/v1/authorize?client_id=Cb4268541f68984c205305cd19f1ec4769fde9e3142ec03ca8d26f57230704771&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A2000%2Fredirect.html&scope=spark%3Aall%20spark%3Akms&state=set_state_here"
 
 counter=0
 
@@ -102,8 +103,7 @@ def home():
 @app.route('/next.html')
 def next():
     print(Fore.YELLOW + "\n+++ Function Next() +++\n")
-    url = "https://webexapis.com/v1/authorize?client_id=Cb4268541f68984c205305cd19f1ec4769fde9e3142ec03ca8d26f57230704771&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A2000%2Fredirect.html&scope=spark%3Aall%20spark%3Akms&state=set_state_here"
-    return redirect(url)
+    return redirect(oauthUrl)
        
 """
     STEP 3:
@@ -149,7 +149,9 @@ async def get_code():
             return render_template('redirect.html')
     
     except Exception as e:
-        return "Error: Ocurrió un problema. Detalles: {}".format(str(e))
+        print ("Error: You have an Exception. Verify your: {}".format(str(e)))
+        return render_template('error.html')
+    
 """
     STEP 5:
     In this section we are going to use the access token to send some request GET using

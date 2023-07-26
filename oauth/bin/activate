@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/devnet/devnet/webex/oauth"
+VIRTUAL_ENV="/home/devnet/devnet/oauth2/OAUTH2/oauth"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
