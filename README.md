@@ -19,7 +19,6 @@ Requirements
 1.  Create an account in the portal web Webex for Developers
     <https://developer.webex.com/>.
 
-
 2.  Create your Webex Apps
 
 <div align=center>
@@ -37,35 +36,39 @@ style="width:5.77844in;height:2.27398in" />
 
 3.  Create a virtual environment in python 3.9 +
 
-> Store the variables using environment variable in your system Linux.
->
-> clientID = "Cb4268541f68984c205305cd19f1ecec03ca8d26f57230704771"
->
-> secretID = "2826a140ad33730e2ab787a44ca4c714d6cc4cb5896168"
->
-> redirectURI = <http://127.0.0.1:2000/redirect.html>
->
-> url =
-> "https://webexapis.com/v1/authorize?client_id=Cb4268541f68984c205305cd19f1ec4769fde9e26f57230704771&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A2000%2Fredirect.html&scope=spark%3Aall%20spark%3Akms&state=set_state_here"
++ Store the variables as environment variable in your system Linux for clientID and secretID.
+
+clientID = "Cb4268541f68984c205305cd19f1ecec03ca8d26f57230704771"
+
+secretID = "2826a140ad33730e2ab787a44ca4c714d6cc4cb5896168"
+
++ Take note about your redirect URI that is web page that cisco going to redirect after success authentication.
+  The redirectURI variable, remplace the value in your code.
+  
+redirectURI = "http://127.0.0.1:2000/redirect.html"
+
++ OAuth Authorization URL is used in the code index.py in the "oauthUrl" variable, remplace the value in your code.
+
+oauthUrl = "https://webexapis.com/v1/authorize?client_id=Cb4268541f68984c205305cd19f1ec4769fde9e26f57230704771&response_type=code&redirect_uri=http%3A%2F%2F127.0.0.1%3A2000%2Fredirect.html&scope=spark%3Aall%20spark%3Akms&state=set_state_here"
 
 Process in Linux:
 
 ```yaml
- (oauth) devnet@PC1 ~/devnet/webex \$ export secretID="2826a140ffe0643ee2ab787a44ca4c714d6cc4cb5896168" > ~/.bashrc
+ devnet@PC1$ export secretID="2826a140ffe0643ee2ab787a44ca4c714d6cc4cb5896168" > ~/.bashrc
 ```
 
 ```yaml
- (oauth) devnet@PC1 ~/devnet/webex \$ export clientID="Cb4268541f6898e9e3142ec03ca8d26f57230704771" > ~/.bashrc
+ devnet@PC1$ export clientID="Cb4268541f6898e9e3142ec03ca8d26f57230704771" > ~/.bashrc
 ```
 
 ```yaml
- (oauth) devnet@PC1 ~/devnet/webex \$ source ~/.bashrc
+ devnet@PC1$ source ~/.bashrc
 ```
 
 ```yaml
- (oauth) devnet@PC1 ~/devnet/webex \$ echo $secretID
+ (oauth) devnet@PC1$ echo $secretID
  2826a140ffe0643eb3a5ad2244ad33730e2ab787a44ca4c714d6cc4cb5896168
- (oauth) devnet@PC1 ~/devnet/webex \$ echo \$clientID
+ (oauth) devnet@PC1$ echo \$clientID
  Cb4268541f68984c205305cd19f1ec4769fde9e3142ec03ca8d26f57230704771
 ```
 
