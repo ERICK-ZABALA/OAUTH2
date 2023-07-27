@@ -68,7 +68,7 @@ Process in Linux:
 ```yaml
  (oauth) devnet@PC1$ echo $secretID
  2826a140ffe0643eb3a5ad2244ad33730e2ab787a44ca4c714d6cc4cb5896168
- (oauth) devnet@PC1$ echo \$clientID
+ (oauth) devnet@PC1$ echo $clientID
  Cb4268541f68984c205305cd19f1ec4769fde9e3142ec03ca8d26f57230704771
 ```
 
@@ -76,11 +76,11 @@ Process in Linux:
     listed in requirements.txt
 
 ```python
-devnet@PC1 ~/devnet/webex \$ python3.10 -m venv oauth
+devnet@PC1$ python3.10 -m venv oauth
 
-devnet@PC1 ~/devnet/webex \$ source oauth/bin/activate
+devnet@PC1$ source oauth/bin/activate
 
-devnet@PC1 ~/devnet/webex \$pip install -r requirements.txt
+devnet@PC1$ pip install -r requirements.txt
 ```
 
 # Flow OAuth 2.0
